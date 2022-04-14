@@ -1,0 +1,21 @@
+plugins {
+    id("io.spinnaker.plugin.bundler").version("$spinnakerGradleVersion")
+}
+
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+spinnakerBundle {
+    pluginId = "My.Plugin"
+    description = "My Sample Plugin"
+    provider = "https://github.com"
+    version = rootProject.version
+}
+
+subprojects {
+    group = "com.sample"
+    version = rootProject.version
+}
