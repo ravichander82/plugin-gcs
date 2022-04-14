@@ -1,1 +1,6 @@
-
+[
+  {
+    "id": "My.Plugin",
+    "url": "https://github.com/ravichander82/plugin-gcs/blob/main/sample-plugin/plugins.json"
+  }
+]
