@@ -5,7 +5,7 @@
     "releases": [
         {
             "version": "1.0.1",
-            "date": "2022-04-20T09:51:22.174732Z",
+            "date": "2022-04-20T10:06:15.083307Z",
             "requires": "sample-clouddriver-plugin>=0.0.0",
             "sha512sum": "0cb4937985735254a768da4675b3c5e409cf68c436d11eb9450a44cd4518a7801e3dc9d6272626a3712f0e8fb0a8ab6378036b05052c48d25e2b1ec55d1a3c4c",
             "preferred": false,
