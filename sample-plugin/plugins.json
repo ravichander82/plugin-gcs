@@ -1,6 +1,6 @@
 [
   {
-    "id": "My.Plugin",
+    "id": "MyPlugin",
     "description": "My Sample Plugin",
     "provider": "https://github.com",
     "releases": [
