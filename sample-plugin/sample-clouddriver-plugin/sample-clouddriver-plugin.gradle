@@ -13,9 +13,9 @@ repositories {
 sourceSets.main.java.srcDirs = ["src/main/java"]
 
 spinnakerPlugin {
-    serviceName = "sample-clouddriver-plugin"
+    serviceName = "clouddriver"
     pluginClass = "com.sample.ClouddriverPlugin"
-    requires = "sample-clouddriver-plugin>=0.0.0"
+    requires = "clouddriver>=0.0.0"
 }
 
 dependencies {
