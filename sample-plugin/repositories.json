@@ -1,6 +1,6 @@
 [
   {
-    "id": "repo.gcs",
+    "id": "gcsPluginRepo",
     "url": "https://raw.githubusercontent.com/ravichander82/plugin-gcs/main/sample-plugin/plugins.json"
   }
 ]
