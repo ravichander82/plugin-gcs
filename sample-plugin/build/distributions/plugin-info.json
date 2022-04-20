@@ -1,13 +1,13 @@
 {
-    "id": "My.Plugin",
+    "id": "MyPlugin",
     "description": "My Sample Plugin",
     "provider": "https://github.com",
     "releases": [
         {
             "version": "1.0.1",
-            "date": "2022-04-14T06:17:18.007315Z",
+            "date": "2022-04-20T07:46:52.086220Z",
             "requires": "sample-clouddriver-plugin>=0.0.0",
-            "sha512sum": "0ab2338ccfdb84fc58788968eddeb0a8e34f424812d30b8fe31dc1be11e5407b7bb172d3310a10d7ea49dbeee237a81ec8c15feff0b0d6c76cf8dc2138aa936a",
+            "sha512sum": "9f6cf557cc8d6b9ad1314f2e2e025256c57019937e5135b608634ab2bb5cf4b500caef29e396811f7a00d7d931d3b0a16e024db020b809f66316cfac063445ac",
             "preferred": false,
             "compatibility": [
                 
