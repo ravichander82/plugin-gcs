@@ -9,7 +9,7 @@ repositories {
 }
 
 spinnakerBundle {
-    pluginId = "MyPlugin"
+    pluginId = "My.Plugin"
     description = "My Sample Plugin"
     provider = "https://github.com"
     version = rootProject.version

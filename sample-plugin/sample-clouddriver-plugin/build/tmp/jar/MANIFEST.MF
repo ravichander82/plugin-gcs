@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Plugin-Class: com.sample.ClouddriverPlugin
-Plugin-Id: MyPlugin
+Plugin-Id: My.Plugin
 Plugin-Version: 1.0.1
 Plugin-Requires: sample-clouddriver-plugin>=0.0.0
 Plugin-Description: My Sample Plugin

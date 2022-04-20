@@ -1,12 +1,12 @@
 {
-    "pluginPath": "/home/ravichander/IdeaProjects/sample-plugin/sample-clouddriver-plugin/build/tmp/jar",
+    "pluginPath": "/home/ravichander/IdeaProjects/plugin-gcs/sample-plugin/sample-clouddriver-plugin/build/tmp/jar",
     "classesDirs": [
-        "/home/ravichander/IdeaProjects/sample-plugin/sample-clouddriver-plugin/build/classes/java/main",
-        "/home/ravichander/IdeaProjects/sample-plugin/sample-clouddriver-plugin/build/classes/groovy/main",
-        "/home/ravichander/IdeaProjects/sample-plugin/sample-clouddriver-plugin/build/resources/main"
+        "/home/ravichander/IdeaProjects/plugin-gcs/sample-plugin/sample-clouddriver-plugin/build/classes/java/main",
+        "/home/ravichander/IdeaProjects/plugin-gcs/sample-plugin/sample-clouddriver-plugin/build/classes/groovy/main",
+        "/home/ravichander/IdeaProjects/plugin-gcs/sample-plugin/sample-clouddriver-plugin/build/resources/main"
     ],
     "libsDirs": [
-        "/home/ravichander/IdeaProjects/sample-plugin/sample-clouddriver-plugin/build/lib",
+        "/home/ravichander/IdeaProjects/plugin-gcs/sample-plugin/sample-clouddriver-plugin/build/lib",
         "/home/ravichander/.gradle/caches/modules-2/files-2.1/com.google.cloud/google-cloud-storage/2.4.5/238c734848a0d12f2c310c4325c953060c35813c",
         "/home/ravichander/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.0.1-jre/119ea2b2bc205b138974d351777b20f02b92704b",
         "/home/ravichander/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.19.4/748e4e0b9e4fa6b9b1fe65690aa04a9db56cfc4d",
