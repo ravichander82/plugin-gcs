@@ -10,8 +10,8 @@
             "requires": "sample-clouddriver-plugin>=0.0.0",
             "sha512sum": "9f6cf557cc8d6b9ad1314f2e2e025256c57019937e5135b608634ab2bb5cf4b500caef29e396811f7a00d7d931d3b0a16e024db020b809f66316cfac063445ac",
             "state" : "",
-             "url" : "https://github.com/ravichander82/plugin-gcs/releases/download/v1.0.1/plugin-root-1.0.1.zip"
-        }
-    ]
+            "url" : "https://github.com/ravichander82/plugin-gcs/releases/download/v1.0.1/plugin-root-1.0.1.zip"
+         }
+      ]
    }
 ]
