@@ -1,6 +1,7 @@
 package com.sample;
 
 import com.netflix.spinnaker.kork.plugins.api.spring.PrivilegedSpringPlugin;
+import com.netflix.spinnaker.kork.secrets.SecretManager;
 import org.pf4j.PluginWrapper;
 import org.springframework.beans.factory.BeanDefinitionStoreException;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -31,7 +32,8 @@ public class ClouddriverPlugin extends PrivilegedSpringPlugin {
                 GoogleCredentialsDefinitionSource.class,
                 GcsSource.class,
                 GoogleUtils.class,
-                GCSConfig.class));
+                GCSConfig.class,
+                GoogleSecretManager.class));
         for (Class classToAdd : classes) {
             BeanDefinition beanDefinition = beanDefinitionFor(classToAdd);
             try {

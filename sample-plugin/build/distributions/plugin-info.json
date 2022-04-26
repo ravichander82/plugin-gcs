@@ -5,9 +5,9 @@
     "releases": [
         {
             "version": "1.0.1",
-            "date": "2022-04-20T15:22:16.756872Z",
+            "date": "2022-04-26T15:53:25.702085Z",
             "requires": "clouddriver>=0.0.0",
-            "sha512sum": "4e966d990df5e148a2172a6a315277ce897f3bce43e713f753e837d0f43ba2cd9ed5f6a6c786edd8c29e71f89a343ea93585db99942a1a23c464b62a979c2840",
+            "sha512sum": "bf1d96c154e12519331bc9961851f0b09dbe9335a27699fa1915549edfd4edda9c9514c6764befe9e88b4d7be8447b69f18496e8f27ce863397affb1fd8caf3e",
             "preferred": false,
             "compatibility": [
                 

@@ -22,6 +22,7 @@ dependencies {
     implementation "com.google.guava:guava:30.0-jre"
     implementation platform('com.google.cloud:libraries-bom:25.0.0')
     implementation 'com.google.cloud:google-cloud-storage'
+    implementation "com.google.cloud:google-cloud-secretmanager"
     compileOnly "com.google.api-client:google-api-client:1.31.5"
     compileOnly (group: 'org.yaml', name: 'snakeyaml', version: '1.23')
     compileOnly "org.codehaus.groovy:groovy-all:+"
