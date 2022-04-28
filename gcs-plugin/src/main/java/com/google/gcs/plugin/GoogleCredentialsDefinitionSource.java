@@ -32,10 +32,10 @@ public class GoogleCredentialsDefinitionSource implements CredentialsDefinitionS
         List<GoogleConfigurationProperties.ManagedAccount> googleCredentialsDefinitions =
                 new ArrayList<>();
 
-        InputStream bucket = gcsSource.downloadRemoteFile(config.getGcsBucketName(), config.getFileName());
+        InputStream gcsData = gcsSource.downloadRemoteFile(config.getGcsBucketName(), config.getFileName());
 
         Yaml yaml = new Yaml();
-        Map<String, Object> data = yaml.load(bucket);
+        Map<String, Object> data = yaml.load(gcsData);
 
         HashMap map = (HashMap) data.get("google");
         ArrayList accountsList = (ArrayList) map.get("accounts");
@@ -43,13 +43,17 @@ public class GoogleCredentialsDefinitionSource implements CredentialsDefinitionS
         ObjectMapper mapper = new ObjectMapper();
 
         for( int i =0 ;i<accountsList.size();i++) {
-            GoogleConfigurationProperties.ManagedAccount managedAccount = mapper.convertValue(accountsList.get(i),GoogleConfigurationProperties.ManagedAccount.class);
-            String jsonPath = managedAccount.getJsonPath();
-            if(EncryptedSecret.isEncryptedSecret(jsonPath)){
-                System.out.println(" JsonPath is encrypted secret ");
-                managedAccount.setJsonPath(secretManager.decryptAsFile(managedAccount.getJsonPath()).toString());
+            try {
+                GoogleConfigurationProperties.ManagedAccount managedAccount = mapper.convertValue(accountsList.get(i),GoogleConfigurationProperties.ManagedAccount.class);
+                String jsonPath = managedAccount.getJsonPath();
+                if(EncryptedSecret.isEncryptedSecret(jsonPath)){
+                    System.out.println(" JsonPath is encrypted secret ");
+                    managedAccount.setJsonPath(secretManager.decryptAsFile(managedAccount.getJsonPath()).toString());
+                }
+                googleCredentialsDefinitions.add(managedAccount);
+            } catch (Exception e) {
+                System.out.println(" Mapping Exception is encountered " + e.getMessage());
             }
-            googleCredentialsDefinitions.add(managedAccount);
         }
 
         return ImmutableList.copyOf(googleCredentialsDefinitions);

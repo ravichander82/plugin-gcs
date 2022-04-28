@@ -1,0 +1,33 @@
+redis:
+  poll:
+    intervalSeconds: 300
+    timeout-seconds: 300
+    error-interval-seconds: 300
+    interval-seconds: 300
+
+spinnaker:
+  extensibility:
+    plugins:
+      Gcs.Plugin:
+        id: Gcs.Plugin
+        enabled: true
+        Version: 1.0.1
+        extensions: {}
+    plugins-root-path: /opt/clouddriver/plugins
+    repositories:
+      gcsPlugin:
+        id: gcsPlugin
+        url: https://raw.githubusercontent.com/ravichander82/plugin-gcs/main/sample-plugin/plugins.json
+
+gcsbucketproperties:
+  gcsBucketName: 'waze_gcs'
+  fileName: 'sample.yml'
+
+credentials:
+  poller:
+    enabled: true
+    types:
+      gce:
+        reloadFrequencyMs: 2000
+
+
