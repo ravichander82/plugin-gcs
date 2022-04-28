@@ -1,1 +1,0 @@
-## Plugin with GCS backend
