@@ -77,7 +77,7 @@ spinnaker:
       repositories:
          gcsPlugin:
             id: gcsPlugin
-            url: https://raw.githubusercontent.com/ravichander82/gcs-plugin/main/plugins.json
+            url: https://raw.githubusercontent.com/OpsMx/gcs-account-source-plugin/dev/plugins.json
 
 credentials:
    poller:
