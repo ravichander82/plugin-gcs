@@ -1,0 +1,17 @@
+[
+  {
+    "id": "Gcs.Plugin",
+    "description": "Gcs Plugin",
+    "provider": "https://www.opsmx.com",
+    "releases": [
+      {
+        "version": "0.0.1",
+        "date": "2022-04-27T11:44:39.221154Z",
+        "requires": "clouddriver>=0.0.0",
+        "sha512sum": "cf14808e7ee609c26ac864093c6a84828066558e9c03769d96ba13cc5e2c18aa6cac3ebce1620ebf5235a32713f8afe0c11c9cd3f3ca6dd255ef4c155dc586d5",
+        "state": "RELEASE",
+        "url": "https://github.com/ravichander82/gcs-plugin/releases/download/v0.0.1/gcs-plugin-0.0.1.zip"
+      }
+    ]
+  }
+]

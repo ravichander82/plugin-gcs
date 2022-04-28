@@ -1,0 +1,21 @@
+plugins {
+  id("io.spinnaker.plugin.bundler").version("$spinnakerGradleVersion")
+}
+
+repositories {
+  mavenLocal()
+  mavenCentral()
+  maven { url "https://dl.google.com/spinnaker/gradle/" }
+}
+
+spinnakerBundle {
+  pluginId = "Gcs.Plugin"
+  description = "Gcs accounts Plugin"
+  provider = "https://www.opsmx.com"
+  version = rootProject.version
+}
+
+subprojects {
+  group = "com.google.gcs.plugin"
+  version = rootProject.version
+}

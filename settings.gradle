@@ -1,0 +1,23 @@
+pluginManagement {
+  repositories {
+    mavenLocal()
+    maven { url "https://dl.google.com/spinnaker/gradle/" }
+    gradlePluginPortal()
+  }
+}
+
+rootProject.name = "gcs-plugin"
+
+include "gcs-plugin"
+
+def setBuildFile(project) {
+  project.buildFileName = "${project.name}.gradle"
+  project.children.each {
+    setBuildFile(it)
+  }
+}
+
+rootProject.children.each {
+  setBuildFile(it)
+}
+
