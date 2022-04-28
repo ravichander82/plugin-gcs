@@ -18,8 +18,7 @@ import java.util.concurrent.atomic.AtomicReference;
 @Component
 public class GcsSource {
     private static final Logger log = LoggerFactory.getLogger(GcsSource.class);
-    private static final String IDENTIFIER = "gcs";
-    private static final String APPLICATION_NAME = "Spinnaker";
+
     private final AtomicReference<Storage> googleStorage = new AtomicReference();
 
     public GcsSource() {
@@ -34,7 +33,7 @@ public class GcsSource {
             Storage storage = getStorage();
             return storage.objects().get(bucket, objName).executeMediaAsInputStream();
         } catch (IOException var5) {
-            throw new SecretException(String.format("Error reading contents of GCS. Bucket: %s, Object: %s.\nError: %s", bucket, objName, var5.toString()));
+            throw new RuntimeException(String.format("Error reading contents of GCS. Bucket: %s, Object: %s.\nError: %s", bucket, objName, var5.toString()));
         }
     }
 

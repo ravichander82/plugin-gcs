@@ -6,9 +6,9 @@
     "releases": [
       {
         "version": "0.0.1",
-        "date": "2022-04-28T09:42:24.886083Z",
+        "date": "2022-04-28T10:41:10.923477Z",
         "requires": "clouddriver>=0.0.0",
-        "sha512sum": "a9d81df3bca9b5037b22ef03e9e630c6bd97c10790ad130e3ccb23c1935211fad96724cb052accade2594e25c7ca04f5f09f285ccda8bcecfc91c076b0ebfb79",
+        "sha512sum": "5be865602cefc417386605e69dda29a2303f466f8019507aa14313a83db3c0ad3be17dc8c00f7ca867003d4e789ec7430e24d7a4093d7dc85802d8dbf499b370",
         "state": "RELEASE",
         "url": "https://github.com/ravichander82/gcs-plugin/releases/download/v0.0.1/gcs-plugin-0.0.1.zip"
       }
